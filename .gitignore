@@ -1,0 +1,12 @@
+*.h5
+*.cfg
+*.txt
+*.csv
+*.jpeg
+*.png
+*.jpg
+*.tiff
+/augmented_train
+/logs
+/test
+/train
