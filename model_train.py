@@ -75,8 +75,10 @@ batch_size = int(cfg_parser.get('model_specs', 'batch_size'))
 num_epochs = int(cfg_parser.get("model_specs", "epochs"))
 optimizer = cfg_parser.get("model_specs", "optimizer")
 learning_rate = float(cfg_parser.get("model_specs", "learning_rate"))
+
 gpu = cfg_parser.get("model_specs", "gpu")
 os.environ["CUDA_VISIBLE_DEVICES"] = gpu
+
 
 image_classifier = Image_Classifier(0, [], [], 'mobilenet_v2', optimizer, learning_rate)
 
